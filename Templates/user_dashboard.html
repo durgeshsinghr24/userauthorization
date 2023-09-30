@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body> 
+    <nav>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('user_dashboard') }}">user_dashboard</a></li>
+        <li><a href="{{ url_for('protected_resource') }}">Protected Resource</a></li> 
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+</nav>
+    <h2>User Dashboard</h2>
+    <!-- Add content specific to the user dashboard here -->
+</body>
+</html>

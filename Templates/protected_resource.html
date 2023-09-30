@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected Resource</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('admin_dashboard') }}">Admin Dashboard</a></li>
+            <li><a href="{{ url_for('protected_resource') }}">Protected Resource</a></li> 
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+    <h2>Protected Resource</h2>
+    
+    <!-- Display user-specific information here -->
+    <p>User ID: {{ current_user_id }}</p>
+    <p>Your age: {{ user_age }}</p>
+    <p>Your role: {{ user_role }}</p>
+    <!-- Add more user-specific details as needed -->
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <h2>User Profile</h2>
+    
+    <!-- Display user-specific information here -->
+    <p>Welcome, {{ current_user.id }}!</p>
+    <p>Your age: {{ current_user.age }}</p>
+    <!-- Add more user-specific details as needed -->
+
+    <!-- Example logout link -->
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
